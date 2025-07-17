@@ -1,6 +1,8 @@
 ## Ignore the MVN compiled output directories from version tracking
 target/
 
+*.patch
+
 ## Ignore tags index files created by Exuberant Ctags
 tags
 
