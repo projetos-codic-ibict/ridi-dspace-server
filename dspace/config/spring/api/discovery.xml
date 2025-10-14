@@ -202,7 +202,7 @@
                 <ref bean="searchFilterAccessStatus" />
                 <ref bean="searchFilterCNPq" />
                 <ref bean="searchFilterInstituition" />
-                <ref bean="searchFilterType" />
+                
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -249,8 +249,8 @@
         <property name="defaultFilterQueries">
             <list>
                 <!--Only find items, communities and collections-->
-                <value>search.resourcetype:Item AND latestVersion:true</value>
-                <!-- <value>(search.resourcetype:Item AND latestVersion:true) OR search.resourcetype\:Collection OR search.resourcetype:Community</value> -->
+                <!-- <value>search.resourcetype:Item AND latestVersion:true</value> -->
+                <value>(search.resourcetype:Item AND latestVersion:true) OR search.resourcetype\:Collection OR search.resourcetype:Community</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
@@ -437,8 +437,8 @@
             <list>
                 <!--Only find items, communities and collections-->
                 <!-- NOTE: NOT filtered on latestVersion = true -->
-                <value>search.resourcetype:Item AND latestVersion:true</value>
-                <!-- <value>search.resourcetype:Item OR search.resourcetype:Collection OR search.resourcetype:Community</value> -->
+                <!-- <value>search.resourcetype:Item AND latestVersion:true</value> -->
+                <value>search.resourcetype:Item OR search.resourcetype:Collection OR search.resourcetype:Community</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
