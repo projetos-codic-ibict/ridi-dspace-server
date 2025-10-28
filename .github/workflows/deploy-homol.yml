@@ -1,4 +1,4 @@
-name: Deploy Homologação RIDI Backend
+name: Deploy Backend (Homologação)
 
 on:
   push:
@@ -6,29 +6,32 @@ on:
       - main
 
 jobs:
-  deploy-hml:
+  deploy:
     name: Deploy em Homologação
     runs-on: [self-hosted, hml-ridi-backend, Linux, X64]
 
     steps:
-      - name: Checkout código do repositório
+      - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Compilar o backend RIDI
-        run: mvn clean package -DskipTests
+      - name: Compilar o projeto
+        run: mvn clean package 
 
-      - name: Atualizar DSpace
+      - name: Atualizar instalação DSpace
         run: |
           cd dspace/target/dspace-installer
           ant update
 
-      - name: Reiniciar RIDI
+      - name: Reiniciar aplicação Java manualmente
         run: |
-          if systemctl list-units --type=service | grep -q "ridi.service"; then
-            echo "🔁 Reiniciando serviço ridi.service..."
-            sudo systemctl restart ridi.service
-          else
-            echo "⚙️ Executando manualmente o backend RIDI..."
-            pkill -f "ridi.jar" || true
-            nohup java -jar /dspace/ridi/ridi.jar --server.port=8081 > /dspace/ridi/ridi.log 2>&1 &
-          fi
+          echo "Parando processo Java antigo..."
+          pkill -f 'server-boot.jar' || true
+
+          echo "Iniciando nova instância..."
+          nohup java -jar /dspace/ridi/webapps/server-boot.jar \
+            --server.port=8081 \
+            > /dspace/ridi/backend.log 2>&1 &
+          
+          sleep 5
+          echo "Processos Java ativos:"
+          pgrep -a java
