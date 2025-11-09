@@ -20,6 +20,27 @@
         <!-- Default submission process -->
         <name-map collection-handle="default" submission-name="traditional"/>
 
+        <name-map collection-handle="123456789/209" submission-name="artigo-ibbd-brasil"/>
+        <name-map collection-handle="123456789/415" submission-name="artigo-ibbd-exterior"/>
+        <name-map collection-handle="123456789/8" submission-name="artigo-brasil"/>
+        <name-map collection-handle="123456789/32" submission-name="artigo-exterior"/>
+
+        <name-map collection-handle="123456789/153" submission-name="dissertacao-ibbd"/>
+        <name-map collection-handle="123456789/19" submission-name="dissertacao-mestrado"/>
+        <name-map collection-handle="123456789/508" submission-name="teses-dissertacoes-ufrj"/>
+        <name-map collection-handle="123456789/897" submission-name="teses-dissertacoes-uff"/>
+        <name-map collection-handle="123456789/34" submission-name="tese-doutorado"/>
+
+        <name-map collection-handle="123456789/345" submission-name="livros-e-capitulos-de-livros-ibbd"/>
+        <name-map collection-handle="123456789/7" submission-name="livros-e-capitulos-de-livros-nacionais"/>
+
+        <name-map collection-handle="123456789/211" submission-name="trabalhos-apresentados-em-congresso-no-exterior-ibbd"/>
+        <name-map collection-handle="123456789/37" submission-name="trabalhos-apresentados-em-congresso-no-brasil"/>
+        <name-map collection-handle="123456789/38" submission-name="trabalhos-apresentados-em-congresso-no-exterior"/>
+
+
+
+
         <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
              https://github.com/DSpace-Labs/AIP-Files/releases/tag/demo-entities-data
              This sets up the following Entity-based Collections in that dataset:
@@ -108,6 +129,115 @@
 
         <!-- The following set of DescribeStep <step-definition>s all point to forms (of the same name) which are
              defined in submission-forms.xml -->
+        <step-definition id="publisher" mandatory="true">
+            <heading>submit.progressbar.describe.publisher</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="person" mandatory="true">
+            <heading>submit.progressbar.describe.person</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="person-fields" mandatory="true">
+            <heading>submit.progressbar.describe.person-fields</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="journal" mandatory="true">
+            <heading>submit.progressbar.describe.journal</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="course" mandatory="true">
+            <heading>submit.progressbar.describe.course</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="program" mandatory="true">
+            <heading>submit.progressbar.describe.program</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+         <step-definition id="type" mandatory="true">
+            <heading>submit.progressbar.describe.type</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+         <step-definition id="artigo1" mandatory="true">
+            <heading>submit.progressbar.describe.artigo1</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="artigo2" mandatory="true">
+            <heading>submit.progressbar.describe.artigo2</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="artigo3" mandatory="true">
+            <heading>submit.progressbar.describe.artigo3</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <step-definition id="book1" mandatory="true">
+            <heading>submit.progressbar.describe.book1</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="book2" mandatory="true">
+            <heading>submit.progressbar.describe.book2</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="book3" mandatory="true">
+            <heading>submit.progressbar.describe.book3</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <step-definition id="conferenceObject1" mandatory="true">
+            <heading>submit.progressbar.describe.conferenceObject1</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="conferenceObject2" mandatory="true">
+            <heading>submit.progressbar.describe.conferenceObject2</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="conferenceObject3" mandatory="true">
+            <heading>submit.progressbar.describe.conferenceObject3</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="tese1" mandatory="true">
+            <heading>submit.progressbar.describe.tese1</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="tese2" mandatory="true">
+            <heading>submit.progressbar.describe.tese2</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="tese3" mandatory="true">
+            <heading>submit.progressbar.describe.tese3</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
         <step-definition id="traditionalpageone" mandatory="true">
             <heading>submit.progressbar.describe.stepone</heading>
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
@@ -271,6 +401,194 @@
     <!-- -->
     <!-- -->
     <submission-definitions>
+
+         <submission-process name="artigo-ibbd-brasil">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="artigo1"/>
+            <step id="publisher"/>
+            <step id="artigo2"/>
+            <step id="journal"/>
+            <step id="artigo3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="artigo-ibbd-exterior">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="artigo1"/>
+            <step id="publisher"/>
+            <step id="artigo2"/>
+            <step id="journal"/>
+            <step id="artigo3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+
+         <submission-process name="artigo-brasil">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="artigo1"/>
+            <step id="publisher"/>
+            <step id="artigo2"/>
+            <step id="journal"/>
+            <step id="artigo3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+
+         <submission-process name="artigo-exterior">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="artigo1"/>
+            <step id="publisher"/>
+            <step id="artigo2"/>
+            <step id="journal"/>
+            <step id="artigo3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="dissertacao-ibbd">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person-fields"/>
+            <step id="tese1"/>
+            <step id="tese2"/>
+            <step id="publisher"/>
+            <step id="course"/>
+            <step id="program"/>
+            <step id="tese3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="dissertacao-mestrado">
+             <step id="collection"/>
+            <step id="type"/>
+            <step id="person-fields"/>
+            <step id="tese1"/>
+            <step id="tese2"/>
+            <step id="publisher"/>
+            <step id="course"/>
+            <step id="program"/>
+            <step id="tese3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="teses-dissertacoes-ufrj">
+             <step id="collection"/>
+            <step id="type"/>
+            <step id="person-fields"/>
+            <step id="tese1"/>
+            <step id="tese2"/>
+            <step id="publisher"/>
+            <step id="course"/>
+            <step id="program"/>
+            <step id="tese3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="teses-dissertacoes-uff">
+             <step id="collection"/>
+            <step id="type"/>
+            <step id="person-fields"/>
+            <step id="tese1"/>
+            <step id="tese2"/>
+            <step id="publisher"/>
+            <step id="course"/>
+            <step id="program"/>
+            <step id="tese3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="tese-doutorado">
+             <step id="collection"/>
+            <step id="type"/>
+            <step id="person-fields"/>
+            <step id="tese1"/>
+            <step id="tese2"/>
+            <step id="publisher"/>
+            <step id="course"/>
+            <step id="program"/>
+            <step id="tese3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="livros-e-capitulos-de-livros-ibbd">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="book1"/>
+            <step id="publisher"/>
+            <step id="book2"/>
+            <step id="book3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="livros-e-capitulos-de-livros-nacionais">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="book1"/>
+            <step id="publisher"/>
+            <step id="book2"/>
+            <step id="book3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="trabalhos-apresentados-em-congresso-no-brasil">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="conferenceObject1"/>
+            <step id="publisher"/>
+            <step id="conferenceObject2"/>
+            <step id="journal"/>
+            <step id="conferenceObject3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+        <submission-process name="trabalhos-apresentados-em-congresso-no-exterior">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="conferenceObject1"/>
+            <step id="publisher"/>
+            <step id="conferenceObject2"/>
+            <step id="journal"/>
+            <step id="conferenceObject3"/>
+            <step id="license"/>
+            <step id="upload"/>
+        </submission-process>
+
+            <submission-process name="trabalhos-apresentados-em-congresso-no-exterior-ibbd">
+            <step id="collection"/>
+            <step id="type"/>
+            <step id="person"/>
+            <step id="conferenceObject1"/>
+            <step id="publisher"/>
+            <step id="conferenceObject2"/>
+            <step id="journal"/>
+            <step id="conferenceObject3"/>
+            <step id="license"/>
+            <step id="upload"/>
+            </submission-process>
+
 
         <!--This "traditional" process defines the DEFAULT item submission process -->
         <submission-process name="traditional">
