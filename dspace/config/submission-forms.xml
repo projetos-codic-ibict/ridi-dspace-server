@@ -637,7 +637,7 @@
             <dc-schema>dc</dc-schema>
             <dc-element>title</dc-element>
             <repeatable>false</repeatable>
-            <label>Título*</label>
+            <label>Título</label>
             <input-type>onebox</input-type>
             <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</hint>
             <required>Você deve informar o título principal deste item.</required>
@@ -858,7 +858,7 @@
             <dc-schema>dc</dc-schema>
             <dc-element>rights</dc-element>
             <repeatable>false</repeatable>
-            <label>Permissão de acesso*</label>
+            <label>Licença do repositório*</label>
             <input-type value-pairs-name="rights">dropdown</input-type>
             <hint>Para que o RIDI possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento.</hint>
 
@@ -873,7 +873,7 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Título*</label>
+                    <label>Título</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</hint>
                     <required></required>
@@ -1071,7 +1071,7 @@
                     <dc-element>rights</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Permissão de acesso*</label>
+                    <label>Licença do repositório*</label>
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o RIDI possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento.</hint>
                     <required></required>
@@ -1086,7 +1086,7 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Título*</label>
+                    <label>Título</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.
                     </hint>
@@ -1317,7 +1317,7 @@
                     <dc-element>rights</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Permissão de acesso*</label>
+                    <label>Licença do repositório*</label>
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o RIDI possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento.
                     </hint>
@@ -1333,7 +1333,7 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Título*</label>
+                    <label>Título</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</hint>
                     <required></required>
@@ -1510,7 +1510,7 @@
                     <dc-element>rights</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Permissão de acesso*</label>
+                    <label>Licença do repositório*</label>
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o RIDI possa disseminar a produção é necessário que você concorde com os termos a seguir. Dedique um momento para ler os termos desta licença. Ao clicar no botão "Eu concedo a licença", você indica que aceita os termos propostos na licença.</hint>
                     <required></required>
