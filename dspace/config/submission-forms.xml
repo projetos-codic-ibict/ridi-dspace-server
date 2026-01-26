@@ -2785,6 +2785,10 @@
                 <displayed-value>Dissertação</displayed-value>
                 <stored-value>Dissertação</stored-value>
             </pair>
+            <pair>
+                <displayed-value>Relatório de pesquisa</displayed-value>
+                <stored-value>Relatório de pesquisa</stored-value>
+            </pair>
         </value-pairs>
 
         <!-- default language order: (from dspace 1.2.1)
