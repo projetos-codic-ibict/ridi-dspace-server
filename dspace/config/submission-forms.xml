@@ -2762,12 +2762,12 @@
 
         <value-pairs value-pairs-name="common_types" dc-term="type">
             <pair>
-                <displayed-value>Artigo de revista</displayed-value>
-                <stored-value>Artigo de revista</stored-value>
+                <displayed-value>Artigo de periódico</displayed-value>
+                <stored-value>Artigo de periódico</stored-value>
             </pair>
             <pair>
-                <displayed-value>Artigo de evento</displayed-value>
-                <stored-value>Artigo de evento</stored-value>
+                <displayed-value>Trabalho apresentado em evento</displayed-value>
+                <stored-value>Trabalho apresentado em evento</stored-value>
             </pair>
             <pair>
                 <displayed-value>Livro</displayed-value>
