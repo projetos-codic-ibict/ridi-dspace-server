@@ -257,12 +257,12 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Nome da instituição</label>
                     <input-type>onebox</input-type>
-                    <hint>Informe o nome completo, por extenso, da instituição seguido pela sigla entre parênteses. Exemplo de preenchimento: Universidade de Brasília (UnB).
+                    <hint>Informe o nome completo, por extenso, da instituição. Exemplo de preenchimento: Instituto Brasileiro de Informação em Ciência e Tecnologia.
                     </hint>
-                    <required>Informe o nome completo, por extenso, da instituição seguido pela sigla entre parênteses. Exemplo de preenchimento: Universidade de Brasília (UnB).</required>
+                    <required>Informe o nome completo, por extenso, da instituição. Exemplo de preenchimento: Instituto Brasileiro de Informação em Ciência e Tecnologia.</required>
                 </field>
             </row>
             <row>
