@@ -12,12 +12,12 @@ Você depositou ${params[0]}
 
 Na coleção: ${params[1]}
 
-Seu depósito foi negado por ${params[2]}
+Sua submissão foi negada por ${params[2]}
 com a seguinte explicação:
 
 ${params[3]}
 
-Seu depósito não foi deletado. Você pode acessá-lo por meio do "Meu espaço" na página: ${params[4]}
+Sua submissão não foi deletada. Você pode acessá-la por meio do "Meu espaço" na página: ${params[4]}
 
 Ridi - Repositório Institucional do Ibict
 rd@ibict.br
