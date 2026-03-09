@@ -3,6 +3,10 @@ rebuild-dspace.sh
 submission-forms copy 2.xml
 submission-forms copy.xml
 
+submission-forms copy 3.xml
+
+item-submission copy.xml
+
 
 ## Ignore the MVN compiled output directories from version tracking
 target/
