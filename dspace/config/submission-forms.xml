@@ -848,7 +848,7 @@
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.
                     </hint>
-                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
+                    
                 </field>
             </row>
             <row>
@@ -1061,7 +1061,7 @@
                     <label>Referência bibliográfica</label>
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</hint>
-                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
+                    
                 </field>
             </row>
             <row>
@@ -1486,7 +1486,7 @@
                     <label>Referência bibliográfica</label>
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</hint>
-                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
+                    
                 </field>
             </row>
             <row>
@@ -1680,7 +1680,7 @@
                 <label>Referência bibliográfica</label>
                 <input-type>textarea</input-type>
                 <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</hint>
-                <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
+                
             </field>
         </row>
         <row>
@@ -4212,6 +4212,10 @@
             <pair>
                 <displayed-value>Ciências biológicas</displayed-value>
                 <stored-value>Ciências biológicas</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ciência da informação</displayed-value>
+                <stored-value>Ciência da informação</stored-value>
             </pair>
             <pair>
                 <displayed-value>Ciências da saúde</displayed-value>
