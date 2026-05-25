@@ -282,7 +282,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>publisherurl</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>URL da página da instituição</label>
                     <input-type>onebox</input-type>
                     <hint>Informe a URL da página oficial da instituição.
@@ -295,7 +295,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>ror</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Identificador ROR</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o indicador único da instituição gerado pela plataforma ROR. Faça a busca pela instituição na página: https://ror.org/</hint>
@@ -307,7 +307,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>isni</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Identificador ISNI</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o indicador único da instituição gerado pela plataforma ISNI. Faça a busca pela instituição na página:  https://isni.oclc.org/
@@ -320,7 +320,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>wikidata</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Identificador Wikidata</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o indicador único da instituição gerado pela plataforma Wikidata. Faça a busca pela instituição na página: https://www.wikidata.org/wiki/Wikidata:Main_Page
@@ -333,7 +333,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier>type</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Tipo da instituição</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o tipo da instituição. Exemplos: Editora, Universidade, Instituto de pesquisa e etc.
@@ -346,7 +346,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier>juridicnature</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Natureza jurídica da instituição
                     </label>
                     <input-type value-pairs-name="institution-type">dropdown</input-type>
@@ -360,7 +360,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier>country</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>País da instituição</label>
                     <input-type value-pairs-name="publisher_countries">dropdown</input-type>
                     <hint>Indique o país de origem da instituição.
